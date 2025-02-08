@@ -4,13 +4,39 @@
 
 This is your new React Native Reproducer project.
 
+## Reproduction steps
+
+1. Build the Android app with New Arch enabled.
+
+```Bash
+cd ReproducerApp
+yarn
+yarn android
+```
+
+2. Start Metro.
+
+```Bash
+npx react-native start
+```
+
+3. Launch the app.
+
+4. Tap the text to open the soft keyboard.
+
+5. Close the soft keyboard.
+
+**Expected result:** The yellow background fills the screen.
+
+**Actual result:** There is a white space at the bottom.
+
 # Reproducer TODO list
 
 - [x] 1. Create a new reproducer project.
-- [ ] 2. Git clone your repository locally.
-- [ ] 3. Edit the project to reproduce the failure you're seeing.
-- [ ] 4. Push your changes, so that Github Actions can run the CI.
-- [ ] 5. Make sure the repository is public and share the link with the issue you reported.
+- [x] 2. Git clone your repository locally.
+- [x] 3. Edit the project to reproduce the failure you're seeing.
+- [x] 4. Push your changes, so that Github Actions can run the CI.
+- [x] 5. Make sure the repository is public and share the link with the issue you reported.
 
 # How to use this Reproducer
 
